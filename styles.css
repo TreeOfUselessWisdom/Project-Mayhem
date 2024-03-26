@@ -1,9 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
 
-html {
-    font-family: 'Roboto', sans-serif;
+.navbar-brand img {
+    padding-right: 16px;
 }
 
+:root {
+    /* Define primary colors */
+    --primary-color: #007bff; /* Blue */
+    --secondary-color: #6c757d; /* Gray */
+    
+    /* Define accent colors */
+    --accent-color1: #93AE88; /* Green */
+    --accent-color2: #dc3545; /* Red */
+    
+    /* Define text colors */
+    --text-color: #333; /* Dark gray */
+    --text-color-light: #fff; /* White */
+    
+    /* Define background colors */
+    --background-color: #f8f9fa; /* Light gray */
+    --background-color-dark: #343a40; /* Dark gray */
+}
 
 
 .navbar-brand span {
@@ -14,4 +31,94 @@ html {
 
 .navbar {
     padding: 48px 0;
+}
+
+a.nav-link {
+    margin-right: 30px;
+}
+
+.collapse .bx {
+    font-size: 2rem;
+}
+
+.collapse button {
+    border: none;
+    border-radius: 35px;
+    background-color: var(--accent-color1);
+}
+
+.hero img {
+    height: 700px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero-text {
+    margin-top: 15vh;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    margin-bottom: 20px;
+    font-size: 5rem;
+}
+
+.hero-text p {
+    margin-left: 5px;
+}
+
+.hero .row .btn {
+    background-color: var(--accent-color1);
+    padding: 10px 10px;
+    margin-left: 12px;
+}
+
+.hero .row .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.exclusive .main h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.exclusive .main p {
+    margin-left: 10px;
+    margin-top: 35px;
+    font-size: 1.2rem;
+}
+
+.exclusive .second {
+    margin-top: 25px;
+}
+
+.second ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.second ul a {
+    margin-right: 100px; 
+    border: 2px solid var(--accent-color1);
+    border-radius: 25px;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.second ul .select {
+    background-color: var(--accent-color1);
+}
+
+a:not(.select):hover {
+    background-color: var(--accent-color1);
+}
+
+.exclusive .third .card {
+    border: none;
+    text-align: center;
+}
+
+.exclusive .third .card img {
+    border-radius: 15px;
 }
