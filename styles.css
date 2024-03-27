@@ -22,6 +22,7 @@
     --background-color-dark: #343a40; /* Dark gray */
 }
 
+/*-----------------------------------------------------------------------------------------------------------*/
 
 .navbar-brand span {
     font-size: 1.5rem;
@@ -35,6 +36,7 @@
 
 a.nav-link {
     margin-right: 30px;
+    border-radius: 15px;
 }
 
 .collapse .bx {
@@ -47,10 +49,15 @@ a.nav-link {
     background-color: var(--accent-color1);
 }
 
+/*-----------------------------------------------------------------------------------------------------------*/
+
 .hero img {
     height: 700px;
     width: 100%;
     border-radius: 10px;
+    -webkit-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75); 
 }
 
 .hero-text {
@@ -76,6 +83,12 @@ a.nav-link {
 
 .hero .row .btn:hover {
     background-color: var(--secondary-color);
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+.exclusive {
+    margin-top: 250px;
 }
 
 .exclusive .main h1 {
@@ -106,11 +119,11 @@ a.nav-link {
     padding: 10px 30px;
 }
 
-.second ul .select {
+.second ul #dodor {
     background-color: var(--accent-color1);
 }
 
-a:not(.select):hover {
+a.select:not(#dodor):hover {
     background-color: var(--accent-color1);
 }
 
@@ -121,4 +134,57 @@ a:not(.select):hover {
 
 .exclusive .third .card img {
     border-radius: 15px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+.quality {
+    margin-top: 250px;
+}
+
+.quality img {
+    height: 700px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75); 
+}
+
+.quality-text {
+    text-align: right;
+    margin-top: 15vh;
+    padding: 10px 10px;
+}
+
+.quality-text h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.quality-text p {
+    margin-left: 5px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+.info-card {
+    -webkit-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75); 
+    border: none;
+    border-radius: 15px;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.info-card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13px;
+    width: 25%;
+    height: 25%;
 }
