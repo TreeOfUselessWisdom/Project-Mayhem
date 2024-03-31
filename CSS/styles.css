@@ -391,3 +391,12 @@ a.select:not(#dodor):hover {
   }
 
 /*-----------------------------------------------------------------------------------------------------------*/
+
+.register-heading {
+    text-align: center;
+}
+
+.register-heading h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
