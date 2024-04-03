@@ -284,25 +284,33 @@
 </section>
 
 <div class="section container-sm register">
-  <form class="row g-3">
+  <form id="feedbackForm" class="row g-3">
     <div class="col-md-6">
       <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control" id="inputEmail4">
+      <input type="email" class="form-control" id="inputEmail4" required>
     </div>
     <div class="col-md-6">
       <label for="inputPassword4" class="form-label">Name</label>
-      <input type="name" class="form-control" id="inputPassword4">
+      <input type="name" class="form-control" id="inputPassword4" required>
     </div>
     <div class="col-12">
-      <label for="inputAddress" class="form-label">Feedback</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="Write what you would like to improve">
+      <label for="inputFeedback" class="form-label">Feedback</label>
+      <input type="text" class="form-control" id="inputFeedback" placeholder="Write what you would like to improve" required>
     </div>
     <div class="col-md-4">
       <label for="inputState" class="form-label">Select Option</label>
-      <select id="inputState" class="form-select">
-        <option selected>Delivery</option>
-        <option>Customer Support</option>
-      </select>
+      <select id="inputState" class="form-select" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Product Quality</option>
+        <option>Website Experience</option>
+        <option>Shipping Delays</option>
+        <option>Technical Issues</option>
+        <option>Communication Problems</option>
+        <option>Refund Process</option>
+        <option>Product Availability</option>
+        <option>Payment Difficulties</option>
+        <option>Other</option>
+      </select> 
     </div>
     <div class="col-12">
       <div class="form-check">
@@ -313,7 +321,7 @@
       </div>
     </div>
     <div class="col-12">
-      <button type="submit" class="btn btn-primary">Sign in</button>
+      <button type="submit" class="btn btn-primary">Submit Feedback</button>
     </div>
   </form>
 </div>
@@ -325,7 +333,7 @@
 <!-----------------------------------------------------Footer--------------------------------------------------------------->
 
 <footer class="footer mt-5 pb-5">
-  <div class="container-fluid">
+  <div class="container">
       <div class="row">
           <div class="col-md-4 mb-4 pt-5">
               <h5>About Us</h5>
@@ -369,8 +377,9 @@
 <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">&#8679;</button>
  
     <!-- <script src="JavaScript/ticker.js"></script> -->
-    <script src="JavaScript/filter.js"></script>
     <script src="JavaScript/scrollbtn.js"></script>
+    <script src="JavaScript/Feedback.js"></script>
+
     
 </body>
 </html>
