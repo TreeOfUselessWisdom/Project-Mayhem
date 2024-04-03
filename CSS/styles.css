@@ -117,10 +117,12 @@ a.nav-link {
 .second ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* Allow the links to wrap to the next line */
 }
 
 .second ul a {
-    margin-right: 100px; 
+    margin-right: 100px; /* Adjust the margin as needed */
+    margin-bottom: 10px; /* Add margin at the bottom to create space between rows */
     border: 2px solid var(--accent-color1);
     border-radius: 25px;
     text-align: center;
@@ -347,6 +349,7 @@ a.select:not(#dodor):hover {
     color: var(--accent-color1);
     padding: 10px 25px;
     border: 2px solid var(--accent-color1);
+    margin-right: 10px;
  
 }
 
@@ -359,6 +362,10 @@ a.select:not(#dodor):hover {
     height: auto;
     border-radius: 10px;
 }
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+
 
 /*-----------------------------------------------------------------------------------------------------------*/
 
@@ -399,4 +406,106 @@ a.select:not(#dodor):hover {
 .register-heading h2 {
     font-size: 3rem;
     font-weight: bold;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/* grid-breakpoints: 
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px */
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 576px){
+    .spear h1 {
+       font-size: 3.5rem;
+    }
+    
+    
+}
+
+@media (max-width: 767px){
+    .project-details {
+        text-align: center; /* Center-align the text */
+      }
+      
+      .project-details h3,
+      .project-details p {
+        text-align: center; /* Center-align both h3 and p */
+      }
+      
+      .project-button {
+        margin-bottom: 20px; /* Add margin from below to the button */
+      }
+}
+
+@media (max-width: 768px){
+    .spear img {
+        height: 500px;
+    }
+
+    .quality .row {
+        flex-direction: column-reverse; /* Reverse the order of columns */
+    }
+    
+    .experience .row {
+        flex-direction: column-reverse; /* Reverse the order of columns */
+    }
+
+    /* Adjust the width of columns */
+    .quality .col-md-5,
+    .experience .col-md-5 {
+        width: 100%; /* Set width to 100% to make images full width */
+    }
+
+    .quality .col-md-7,
+    .experience .col-md-7 {
+        width: 100%; /* Set width to 100% to make text full width */
+    }
+
+    .quality .quality-column,
+    .experience .experience-text {
+        text-align: center; /* Center the text */
+    }
+
+    .center-button {
+        text-align: center;
+    }
+    
+
+}
+
+@media (max-width: 992px){
+    .exclusive .main h2{
+        font-size: 2.5rem;
+    }
+    .exclusive .main p{
+        font-size: 1.1rem;
+    }
+    .quality-text h2{
+        font-size: 2.5rem;
+    }
+    .quality-text p{
+        font-size: 1.1rem;
+    }
+    .project-button {
+        font-size: 0.8rem; /* Reduce button font size */
+        padding: 8px 20px; /* Reduce button padding */
+      }
+}
+
+@media (max-width: 1200px){
+    .project-image img{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 1400px){
+    .second ul a {
+        margin-right: 120px;
+    }
 }
