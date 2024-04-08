@@ -1,0 +1,65 @@
+Here's an explanation of each section of the provided CSS code:
+
+1. **Importing Fonts**:
+   - `@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')`: This line imports the Roboto font family from Google Fonts, which includes various weights and styles.
+
+2. **Styling Navbar Brand**:
+   - `.navbar-brand img`: Styles the images within the navbar brand by adding padding to the right of them.
+
+3. **Root Variables**:
+   - `:root`: Defines custom CSS variables for primary colors, accent colors, text colors, and background colors used throughout the website.
+
+4. **Navbar Styling**:
+   - `.navbar`: Styles the navbar, including its padding, position, and width, making it fixed at the top of the page.
+
+5. **Navigation Links Styling**:
+   - `a.nav-link`: Styles the navigation links by adding margin and border-radius to them.
+
+6. **Styling Collapse Button**:
+   - `.collapse .bx`: Styles the collapse button by setting its font size.
+   - `.collapse button`: Styles the collapse button by removing borders, adding border-radius, and setting background color.
+
+7. **Styling Hero Section**:
+   - `.spear img`: Styles the image in the hero section by setting its height, width, margins, padding, border-radius, and box-shadow.
+   - `.spear-text`: Styles the text content in the hero section.
+
+8. **Styling Exclusive Section**:
+   - `.exclusive`: Styles the exclusive section, adjusting its margin-top.
+   - `.exclusive .main`, `.exclusive .second`, `.exclusive .third`: Styles various elements within the exclusive section, such as headings, paragraphs, and buttons.
+
+9. **Styling Quality Section**:
+   - `.quality`: Styles the quality section, adjusting its margin-top.
+   - `.quality img`, `.quality-text`: Styles the image and text content within the quality section.
+
+10. **Styling Info Cards Section**:
+    - `.info-card`: Styles the info cards, including their box-shadow, border-radius, margin, and text alignment.
+
+11. **Styling Experience Section**:
+    - `.experience`: Styles the experience section, adjusting its margin-top.
+    - `.experience img`, `.experience-text`: Styles the image and text content within the experience section.
+
+12. **Styling Gallery Section**:
+    - `.gallery-heading`, `.gallery .container`: Styles the heading and container of the gallery section.
+    - Defines CSS grid properties for responsive gallery layout.
+
+13. **Styling Footer**:
+    - `.footer`: Styles the footer section, setting its background color and text color.
+
+14. **Styling Projects Section**:
+    - `.projects`: Styles the projects section, including text alignment and padding.
+    - `.project`: Styles individual project items within the section.
+    - `.horizontal-line`: Styles the horizontal line separator.
+
+15. **Styling Product Cards Section**:
+    - `.product-card`: Styles the product cards, including their box-shadow, border-radius, and hover effect.
+    - `.product-card img`: Styles the images within product cards.
+    - `#products-heading`: Styles the heading of the product section.
+
+16. **Scroll Button Styling**:
+    - `#scrollBtn`: Styles the scroll-to-top button.
+
+17. **Register Heading Styling**:
+    - `.register-heading`: Styles the register heading section, including text alignment and font size.
+
+18. **Media Queries**:
+    - Defines various media queries for responsive design, adjusting styles based on screen width breakpoints.

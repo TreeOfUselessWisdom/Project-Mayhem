@@ -363,6 +363,9 @@ a.select:not(#dodor):hover {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
@@ -416,6 +419,11 @@ a.select:not(#dodor):hover {
 .product.card.size {
     flex: 0 0 25%; /* 25% width for each column */
     max-width: 25%;
+}
+
+#products-heading {
+    font-size: 3rem;
+    font-weight: bold;
 }
   
  
