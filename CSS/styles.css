@@ -63,9 +63,9 @@ a.nav-link {
     margin-top: 65px;
     padding-top: 15px;
     border-radius: 10px;
-    -webkit-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75); 
+    -webkit-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
 }
 
 .spear-text {
@@ -121,7 +121,7 @@ a.nav-link {
 }
 
 .second ul a {
-    margin-right: 100px; /* Adjust the margin as needed */
+    margin-right: 100px; /* Adjust the margin */
     margin-bottom: 10px; /* Add margin at the bottom to create space between rows */
     border: 2px solid var(--accent-color1);
     border-radius: 25px;
@@ -156,9 +156,9 @@ a.select:not(#dodor):hover {
     height: 700px;
     width: 100%;
     border-radius: 10px;
-    -webkit-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75); 
+    -webkit-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
 }
 
 .quality-text {
@@ -179,9 +179,9 @@ a.select:not(#dodor):hover {
 /*-----------------------------------------------------------------------------------------------------------*/
 
 .info-card {
-    -webkit-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75); 
+    -webkit-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
     border: none;
     border-radius: 15px;
     margin-left: auto;
@@ -205,9 +205,9 @@ a.select:not(#dodor):hover {
     height: 700px;
     width: 100%;
     border-radius: 10px;
-    -webkit-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 10px 25px 0px rgba(0,0,0,0.75); 
+    -webkit-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
 }
 
 .experience-text {
@@ -303,9 +303,11 @@ a.select:not(#dodor):hover {
 
 /*-----------------------------------------------------------------------------------------------------------*/
 
-.exclusive, .quality, .experience, .gallery-text, .info-card, .projects {
-    margin-top: 250px; /* Adjust this value as needed */
+.exclusive, .quality, .experience, .gallery-text, .info-card, .projects, #products, .register-text {
+    margin-top: 150px; 
 }
+
+
 
 /*-----------------------------------------------------------------------------------------------------------*/
 
@@ -365,7 +367,58 @@ a.select:not(#dodor):hover {
 
 /*-----------------------------------------------------------------------------------------------------------*/
 
+.product-card {
+    position: relative; /* Ensure relative positioning for the sale icon */
+    margin-bottom: 20px;
+    -webkit-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden; /* Ensure rounded corners */
+}
 
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+    border-radius: 15px; 
+}
+
+.product-card .card-body {
+    text-align: center;
+}
+
+.product-card .price {
+    font-weight: bold;
+}
+
+.product-card .discount-price {
+    text-decoration: line-through;
+}
+
+.product-card .sale-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.product.card.size {
+    flex: 0 0 25%; /* 25% width for each column */
+    max-width: 25%;
+}
+  
+ 
 
 /*-----------------------------------------------------------------------------------------------------------*/
 
