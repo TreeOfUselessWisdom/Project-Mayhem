@@ -3,6 +3,7 @@ function updateTicker() {
     // Get current date and time
     var currentDate = new Date();
     var currentTime = currentDate.toLocaleTimeString();
+    var currentDateStr = currentDate.toDateString();
 
     // Check if geolocation is supported by the browser
     if ("geolocation" in navigator) {
@@ -15,7 +16,7 @@ function updateTicker() {
 
                 // Update ticker content with date, time, and location
                 var ticker = document.getElementById('ticker');
-                ticker.textContent = `${currentTime} | ${location}`;
+                ticker.textContent = `${currentDateStr} | ${currentTime} | ${location}`;
             },
             function(error) {
                 // Handle geolocation errors gracefully
@@ -30,4 +31,3 @@ function updateTicker() {
 
 // Update ticker content every second
 setInterval(updateTicker, 1000);
-
