@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
 
 .navbar-brand img {
     padding-right: 16px;
@@ -6,28 +7,39 @@
 
 :root {
     /* Define primary colors */
-    --primary-color: #007bff; /* Blue */
-    --secondary-color: #6c757d; /* Gray */
+    --primary-color: #93AE88; /* Green */
+    --secondary-color:  #607A56; /* green more more */
     
-    /* Define accent colors */
-    --accent-color1: #93AE88; /* Green */
-    --accent-color2: #dc3545; /* Red */
-    
-    /* Define text colors */
-    --text-color: #333; /* Dark gray */
-    --text-color-light: #fff; /* White */
-    
-    /* Define background colors */
-    --background-color: #f8f9fa; /* Light gray */
-    --background-color-dark: #343a40; /* Dark gray */
+ 
+    --accent-color1: #0056B1; /* kinda blue */
+    --accent-color2: #DFF8D5; /* barely Green */
+
+
+    --font-family-primary: 'Roboto', sans-serif;
+    --font-family-secondary: 'Open Sans', sans-serif;
+    --font-family-heading: 'Montserrat', sans-serif;
+
 }
+
+body {
+    font-family: var(--font-family-primary);
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-family-heading);
+  }
+  
+  p {
+    font-family: var(--font-family-secondary);
+  }
+  
 
 /*---------------------------------------------NavBar-----------------------------------------------*/
 
 .navbar-brand span {
     font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
+    color: var(--primary-color);
 }
 
 .navbar {
@@ -37,6 +49,12 @@
     z-index: 1000;
     position: fixed;
     width: 100%;
+    font-family: var(--font-family-heading);
+    color: var(--primary-color);
+}
+
+.navbar a {
+    color: var(--primary-color);
 }
 
 a.nav-link {
@@ -51,17 +69,19 @@ a.nav-link {
 .collapse button {
     border: none;
     border-radius: 35px;
-    background-color: var(--accent-color1);
+    background-color: var(--primary-color);
 }
 
 /*------------------------------------------------Hero---------------------------------------------------*/
 
+.spear {
+    background-color: var(--primary-color);
+}
 
 .spear img {
-    height: 700px;
+    height: auto;
     width: 100%;
-    margin-top: 65px;
-    padding-top: 15px;
+    margin-top: 110px;
     border-radius: 10px;
     -webkit-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 1px 22px -8px rgba(0,0,0,0.75);
@@ -77,20 +97,24 @@ a.nav-link {
 .spear-text h1 {
     margin-bottom: 20px;
     font-size: 5rem;
+    color: white;
 }
 
 .spear-text p {
     margin-left: 5px;
+    color: white;
 }
 
 .spear .row .btn {
     background-color: var(--accent-color1);
     padding: 10px 10px;
     margin-left: 12px;
+    color: white;
 }
 
 .spear .row .btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color2);
+    color: black;
 }
 
 /*------------------------------------------------Exclusive-----------------------------------------------------*/
@@ -102,6 +126,7 @@ a.nav-link {
 .exclusive .main h2 {
     font-size: 3rem;
     font-weight: 700;
+    color: var(--secondary-color);
 }
 
 .exclusive .main p {
@@ -123,18 +148,18 @@ a.nav-link {
 .second ul a {
     margin-right: 100px; /* Adjust the margin */
     margin-bottom: 10px; /* Add margin at the bottom to create space between rows */
-    border: 2px solid var(--accent-color1);
+    border: 2px solid var(--accent-color2);
     border-radius: 25px;
     text-align: center;
     padding: 10px 30px;
 }
 
 .second ul #dodor {
-    background-color: var(--accent-color1);
+    background-color: var(--accent-color2);
 }
 
 a.select:not(#dodor):hover {
-    background-color: var(--accent-color1);
+    background-color: var(--accent-color2);
 }
 
 .exclusive .third .card {
@@ -170,6 +195,7 @@ a.select:not(#dodor):hover {
 .quality-text h2 {
     margin-bottom: 20px;
     font-size: 3rem;
+    color: var(--secondary-color);
 }
 
 .quality-text p {
@@ -187,6 +213,7 @@ a.select:not(#dodor):hover {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding: 10px 0px;
 }
 
 .info-card img {
@@ -218,6 +245,7 @@ a.select:not(#dodor):hover {
 .experience-text h2 {
     margin-bottom: 20px;
     font-size: 3rem;
+    color: var(--secondary-color);
 }
 
 .experience-text p {
@@ -228,10 +256,12 @@ a.select:not(#dodor):hover {
     background-color: var(--accent-color1);
     padding: 10px 10px;
     margin-left: 12px;
+    color: white;
 }
 
 .experience .row .btn:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color2);
+    color: black;
 }
 
 /*------------------------------------------------Gallery--------------------------------------------------*/
@@ -243,6 +273,7 @@ a.select:not(#dodor):hover {
 .gallery-heading h2 {
     font-size: 3rem;
     font-weight: bold;
+    color: var(--secondary-color);
 }
 
 .gallery .container img {
@@ -302,10 +333,20 @@ a.select:not(#dodor):hover {
     z-index: 9999;
 }
 
+/*----------------------------------------------VisitorCount----------------------------------------------------*/
+
+
+.visitor-count {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent-color1); /* Adjust the color as needed */
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
 /*---------------------------------------------SectionMargin-------------------------------------------------------*/
 
-.exclusive, .quality, .experience, .gallery-text, .info-card, .projects, #products, .register-text {
-    margin-top: 150px; 
+.exclusive, .quality, .experience, .gallery-text, .info-card, .projects, #products, .register-text  {
+    margin-top: 100px; 
 }
 
 
@@ -321,6 +362,7 @@ a.select:not(#dodor):hover {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 20px;
+    color: var(--secondary-color);
 }
 
 .horizontal-line {
@@ -349,7 +391,7 @@ a.select:not(#dodor):hover {
 }
 
 .project-button {
-    color: var(--accent-color1);
+    color: black;
     padding: 10px 25px;
     border: 2px solid var(--accent-color1);
     margin-right: 10px;
@@ -357,7 +399,8 @@ a.select:not(#dodor):hover {
 }
 
 .project-button:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color2);
+    color: black;
 }
 
 .project-image img {
@@ -425,14 +468,44 @@ a.select:not(#dodor):hover {
 #products-heading {
     font-size: 3rem;
     font-weight: bold;
+    color: var(--secondary-color);
 }
-  
+
+#searchButton {
+    background-color: var(--accent-color1);
+    color: white;
+}
  
+#searchButton:hover {
+    background-color: var(--accent-color2);
+    color: black;
+}
+/*------------------------------------------------AboutUs---------------------------------------------------*/
+
+#about-us p {
+    text-align: left;
+}
+
+
+
+#about-us {
+    margin-top: 100px; 
+}
+
+.gradient-background {
+    background: linear-gradient(to bottom, #93AE88, #607A56);
+  }
+
+/*-------------------------------------------------FAQ------------------------------------------------*/
+
+#faq h2 {
+    color: var(--secondary-color);
+}
 
 /*------------------------------------------------Footer---------------------------------------------------*/
 
 .footer {
-    background-color: var(--background-color-dark);
+    background: linear-gradient(to bottom, #607A56, #93AE88);
     color: white;
 }
 
@@ -468,7 +541,19 @@ a.select:not(#dodor):hover {
 .register-heading h2 {
     font-size: 3rem;
     font-weight: bold;
+    color: var(--secondary-color);
 }
+
+#submitbtn {
+    background-color: var(--accent-color1);
+    color: white;
+}
+ 
+#submitbtn:hover {
+    background-color: var(--accent-color2);
+    color: black;
+}
+
 
 /*-------------------------------------------------Guide----------------------------------------------------*/
 
@@ -542,6 +627,15 @@ a.select:not(#dodor):hover {
 }
 
 @media (max-width: 992px){
+
+    .info-card {
+        margin-top: 20px;
+    }
+
+    .spear-text h1 {
+        font-size: 4rem;
+    }
+
     .exclusive .main h2{
         font-size: 2.5rem;
     }
