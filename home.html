@@ -51,7 +51,7 @@
                     </ul>
                   </li>
                 </ul>
-                <button><i class='bx bx-cart'></i></button>
+                <button><i class='bx bx-cart'></i><span id="cartItemCount">0</span></button>
               </div>
             </div>
           </nav>
@@ -78,7 +78,7 @@
 <section class="exclusive p-4 container-sm" id="Exclusive">
   <div class="main row">
       <div class="col-md-6">
-          <h2>Our new brands and collections</h2>
+          <h2>Our New Brands And Collections</h2>
       </div>
       <div class="col-md-6">
           <p>Elevate your interior with our curated selection of premium lamps and chandeliers</p>
@@ -194,7 +194,7 @@
       <div class="row">
         <div class="col-md-7">
           <div class="experience-text">
-          <h2 class="display 5 fw-bold">New experience is going to unlock</h2>
+          <h2 class="display 5 fw-bold">New Experience Is Going To Unlock</h2>
               <p class="lead">Indulge in comfort and style with our range of decorative and modern lamps and chandeliers</p>
           </div> <div class="center-button"><button class="btn btn-lg">Shop Now</button></div>
         </div>
@@ -246,7 +246,7 @@
 
 <!------------------------------------------------------<Projects>-------------------------------------------------------------->
     <section class="projects container-sm p-4" id="Projects">
-      <h2>Projects</h2>
+      <h2>Our Well Known Projects</h2>
       <hr class="horizontal-line">
       <div class="project row">
           <div class="project-number col-md-1">01</div>
@@ -255,7 +255,7 @@
               <p>Transform your loft space with sleek and contemporary lighting fixtures. Our modern loft lighting design brings functionality and style together, creating an inviting ambiance for your living area.</p>
           </div>
           <div class="col-md-1">
-            <button type="button" class="btn btn-outline project-button">View</button>
+            <!-- <button type="button" class="btn btn-outline project-button">View</button> -->
           </div>
           <div class="project-image col-md-6">
               <img src="Media/Modern Loft Lighting.jpg" alt="Project Image">
@@ -270,7 +270,7 @@
               <p>Restore the charm of a Victorian-era home with our classic lighting solutions. From ornate chandeliers to elegant wall sconces, our timeless designs will accentuate the architectural features of your space.</p>
           </div>
           <div class="col-md-1">
-            <button type="button" class="btn btn-outline project-button">View</button>
+            <!-- <button type="button" class="btn btn-outline project-button">View</button> -->
           </div>
           <div class="project-image col-md-6">
               <img src="Media/Classic Victorian Restoration.jpg" alt="Project Image">
@@ -285,7 +285,7 @@
               <p>Give your cottage a cozy and inviting atmosphere with our rustic lighting makeover. From warm pendant lights to vintage-inspired table lamps, our curated selection will add character to your home.</p>
           </div>
           <div class="col-md-1">
-            <button type="button" class="btn btn-outline project-button">View</button>
+            <!-- <button type="button" class="btn btn-outline project-button">View</button> -->
           </div>
           <div class="project-image col-md-6">
               <img src="Media/Cozy Cottage Lighting Makeover.jpg" alt="Project Image">
@@ -363,15 +363,15 @@
   <form id="feedbackForm" class="row g-3">
     <div class="col-md-6">
       <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" required>
+      <input type="email" class="form-control" id="inputEmail4" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,3}$" required>
     </div>
     <div class="col-md-6">
-      <label for="inputPassword4" class="form-label">Name</label>
-      <input type="name" class="form-control" id="inputPassword4" required>
+      <label for="inputName4" class="form-label">Name</label>
+      <input type="name" class="form-control" id="inputName4"  pattern="[A-Za-z]{3,}" title="Please enter alphabetic characters only" required>
     </div>
     <div class="col-12">
       <label for="inputFeedback" class="form-label">Feedback</label>
-      <input type="text" class="form-control" id="inputFeedback" placeholder="Write what you would like to improve" required>
+      <textarea class="form-control" id="inputFeedback" placeholder="Write what you would like to improve" rows="4" required></textarea>
     </div>
     <div class="col-md-4">
       <label for="inputState" class="form-label">Select Option</label>

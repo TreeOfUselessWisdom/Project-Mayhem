@@ -7,7 +7,7 @@ const products = [
     { name: "LED Spotlight", category: "led-lights", brand: "radiant-ray", price: "3,000 PKR", image: "Products/LED Spotlight.jpg", specifications: "These plastic LED outdoor lights, measuring 3.92 H x 3.46 W x 7.41 D and weighing 1 pound each, emit 30 lumens at 3000 Kelvin. They feature automatic operation and can be staked or hung, with weather-resistant qualities. Powered by solar energy, each light includes 2 AA lithium-ion batteries, with a 1-year limited warranty.", discountPrice: null },
     { name: "Smart Bulb", category: "led-lights", brand: "glow-galore", price: "2,500 PKR", image: "Products/Smart Bulb.jpg", specifications: "This LED light bulb, with a standard Edison Medium Screw Base E26, produces 1100 lumens of clear light at 2700 Kelvin. Energy Star Certified, it has a bulb life of 22 years, equivalent to a 75-watt output, and is dimmable with a full range of settings.", discountPrice: "3,000 PKR" },
     { name: "Tripod Floor Lamp", category: "lamps", brand: "glow-galore", price: "7,000 PKR", image: "Products/Ellis Tripod Floor Lamp Brass - Threshold.jpg", specifications: "Illuminate your space with the Ellis Tripod Floor Lamp from Glow Galore™. Featuring a tripod-leg base and a white drum shade, it's finished in gold-tone brass for a stylish touch. Perfect for your seating area or living room.", discountPrice: null },
-    { name: "Globe Chandelier", category: "ceiling-lights", brand: "brilliant-design", price: "1,000 PKR", image: "Products/Frosted Glass Geneva Globe Chandelier Brass.jpg", specifications: "Brighten your space with Brilliant Design™ Frosted Glass Geneva Globe Chandelier. Featuring a brass finish and six frosted glass globes, it comes with dimmable LED bulbs for customizable lighting.", discountPrice: "15,000 PKR" },
+    { name: "Globe Chandelier", category: "ceiling-lights", brand: "brilliant-design", price: "15,000 PKR", image: "Products/Frosted Glass Geneva Globe Chandelier Brass.jpg", specifications: "Brighten your space with Brilliant Design™ Frosted Glass Geneva Globe Chandelier. Featuring a brass finish and six frosted glass globes, it comes with dimmable LED bulbs for customizable lighting.", discountPrice: "1,000 PKR" },
     { name: "Ceiling Light Semi Flush", category: "ceiling-lights", brand: "radiant-ray", price: "6,000 PKR", image: "Products/Ceiling Light Fixture.jpg", specifications: "Upgrade your home with this set of two semi-flushmount ceiling lights, featuring earthy burlap shades and bronze canopies, ideal for rustic or country-cottage style settings.", discountPrice: null }
 
 
@@ -20,7 +20,7 @@ const products = [
       $('#productList').append(`
         <div class="col-md-4 mb-3">
           <div class="product-card">
-            <img src="${product.image}" class="card-img-top" alt="${product.name}">
+            <img src="${product.image}" class="card-img-top" alt="${product.name}" onclick="addToCart('${product.name}')">
             <div class="card-body">
               <h5 class="card-title">${product.name}</h5>
               <p class="card-text">${product.specifications}</p>
@@ -64,3 +64,8 @@ const products = [
       displayProducts(filteredProducts);
     }
   });
+
+  // Function to add product to cart and display alert
+  function addToCart(productName) {
+    alert(`${productName} has been added to your cart.`);
+  }
